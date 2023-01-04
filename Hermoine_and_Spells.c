@@ -4,4 +4,5 @@ int main() {
     if(a>c&&b>c) printf("%d",a+b);
     else if(b>a&&c>a) printf("%d",b+c);
     else printf("%d",a+c);
+    return 0;
 }
