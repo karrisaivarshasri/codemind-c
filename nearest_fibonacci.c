@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main() {
-    int first=0,second=1,next=0,n;
+    int f=0,s=1,next=0,n;
     scanf("%d",&n);
     while(n>next) {
-        next=first+second;
-        first=second;
-        second=next;
+        next=f+s;f=s;s=next;
     }
-    if(n-first<second-n) {
-        printf("%d",first);
+    if(n-f<s-n) {
+        printf("%d",f);
     }
-    else if(n-first==second-n) {
-        printf("%d %d",first,second);
+    else if(n-f==s-n) {
+        printf("%d %d",f,s);
     }
-    else printf("%d",second);
+    else {
+        printf("%d",s);
+    }
 }
