@@ -1,10 +1,12 @@
 #include<stdio.h>
 int main() {
-    int n; scanf("%d",&n);
-    int rev=0,t=n;
+    int n,r=0,re,o; scanf("%d",&n);
+    o=n; 
     while(n!=0) {
-        rev=rev*10+n%10; n=n/10;
+        re=n%10;
+        r=r*10+re;
+        n/=10;
     }
-    if(t==rev) printf("True");
+    if(o==r)  printf("True");
     else printf("False");
 }
