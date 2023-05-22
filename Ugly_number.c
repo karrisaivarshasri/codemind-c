@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-    int n,x=0; scanf("%d",&n);
+    int n,c=0; scanf("%d",&n);
     while(n!=1) {
         if(n%2==0) {
             n/=2;
@@ -12,10 +12,10 @@ int main() {
             n/=5;
         }
         else {
-            printf("Not Ugly Number");
-            x=1;
+            c++;
             break;
         }
     }
-    if(x==0) printf("Ugly Number");
+    if(c==1) printf("Not Ugly Number");
+    else printf("Ugly Number");
 }
