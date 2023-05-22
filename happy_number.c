@@ -1,16 +1,15 @@
 #include<stdio.h>
-#include<math.h>
 int main() {
-    int i,j,n,temp,s=0; scanf("%d",&n);
-    while(s!=1&&s!=4) {
+    int n,s=0,rem;
+    scanf("%d",&n);
+    while(s!=1 && s!=4) {
         s=0;
-        while(n>0) {
-            j=n%10;s+=(j*j); n=n/10;
+        while(n!=0) {
+            rem=n%10;
+            s+=(rem*rem); n/=10;
         }
         n=s;
     }
-    if(s==1) {
-        printf("True");
-    }
+    if(s==1) printf("True");
     else printf("False");
 }
