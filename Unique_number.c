@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-    int n,d,x[100],j,i=0,k,c=0,s=0;
+    int n,d,x[100],j,k,i=0,c=0,s=0;
     scanf("%d",&n);
     while(n!=0) {
         d=n%10;
@@ -15,6 +15,10 @@ int main() {
             }
         }
     }
-    if(c==i) printf("Unique Number");
-    else printf("Not Unique Number");
+    if(c==i) {
+        printf("Unique Number");
+    }
+    else {
+        printf("Not Unique Number");
+    }
 }
