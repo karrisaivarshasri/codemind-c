@@ -2,8 +2,14 @@
 int main() {
     int n,r,f,s,t,l;
     scanf("%d",&n);
-    l=n%10;n=n/10;t=n%10;n=n/10;s=n%10;n=n/10;
-    f=n%10;n=n/10;
+    l=n%10;
+    n=n/10;
+    t=n%10;
+    n=n/10;
+    s=n%10;
+    n=n/10;
+    f=n%10;
+    n=n/10;
     if(f==6) {
         f=9;
     }
